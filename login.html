@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script>
+        function validateLogin() {
+            // Get input values
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Replace these with your actual username and password
+            var validUsername = "your_username";
+            var validPassword = "your_password";
+
+            // Check if the entered username and password match
+            if (username === validUsername && password === validPassword) {
+                // Redirect to the main page (change 'index.html' to your desired page)
+                window.location.href = "index.html";
+            } else {
+                // Display an error message if login fails
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Login</h1>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="button" value="Login" onclick="validateLogin()">
+    </form>
+</body>
+</html>

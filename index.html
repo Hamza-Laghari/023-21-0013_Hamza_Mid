@@ -312,7 +312,27 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				  window.location.href = redirectTo;
 				}
 			  </script>
-			  
+			      <script>
+        function validateLogin() {
+            // Get input values
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Replace these with your actual username and password
+            var validUsername = "your_username";
+            var validPassword = "your_password";
+
+            // Check if the entered username and password match
+            if (username === validUsername && password === validPassword) {
+                // Redirect to the main page (change 'index.html' to your desired page)
+                window.location.href = "index.html";
+            } else {
+                // Display an error message if login fails
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    </script>
+
 		</body>
 	</html>
 
